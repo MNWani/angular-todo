@@ -8,16 +8,14 @@ angular.module('TodoApp').config(function($routeProvider) {
     .when('/accounts/register', {
         templateUrl: 'templates/register.html',
         controller: 'RegisterController'
-        css:
     })
     .when('/todo', {
         templateUrl: 'templates/todo.html',
         controller: 'TodoController'
-        css: 
         
     }).when('/todo/edit/:id', {
         templateUrl:'templates/edit-todo.html',
         controller: 'EditTodoController'
-        css: 
+        
     });
 });
