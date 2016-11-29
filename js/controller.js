@@ -1,7 +1,8 @@
 angular.module('RouteControllers', [])
     .controller('HomeController', function($scope) {
         $scope.title = "Welcome To Angular Todo!"
-    })
+        $scope.mark = "Mark Wani"
+    }) 
     .controller('RegisterController', function($scope, UserAPIService, store) {
         $scope.registrationUser = {};
         var URL = "https://morning-castle-91468.herokuapp.com/";
